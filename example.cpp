@@ -6,7 +6,7 @@
 int main() {
     piper2_synthesizer *synth = piper2_create_phonemizer_stress(
         /* locale */ "en_US",
-        /* voice model */ "local/en_US-lessac-medium.onnx",
+        /* voice model */ "local/en_US-hfc_female-medium.onnx",
         /* voice config */ NULL,
         /* phonemizer model */ "models/en_US-phonemizer.onnx",
         /* phonemizer config */ NULL,
@@ -20,7 +20,7 @@ int main() {
     // For models with multiple speakers
     // options.speaker_id = 5;
 
-    piper2_synthesize_start(synth, "This is a test: 1 2 3 4!",
+    piper2_synthesize_start(synth, "This is a test: 1 2 3!",
                             &options);
 
     piper2_audio_chunk chunk;
