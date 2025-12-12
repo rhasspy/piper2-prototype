@@ -20,7 +20,7 @@ int main() {
     // For models with multiple speakers
     // options.speaker_id = 5;
 
-    piper2_synthesize_start(synth, "This is a test: 1 2 3!",
+    piper2_synthesize_start(synth, "This is a test: 1 2 3 4!",
                             &options);
 
     piper2_audio_chunk chunk;
