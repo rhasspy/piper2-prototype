@@ -1,6 +1,5 @@
 This is the default command but to run "Phenomes.cpp" instead of "example.cpp"
 
 
-g++ -Ilibpiper2/include -Lbuild -o example Phenomes.cpp -lpiper2 -licuuc -licu
-i18n
+g++ -Ilibpiper2/include -Lbuild -o example Phenomes.cpp -lpiper2 -licuuc -licui18n
 LD_LIBRARY_PATH="${PWD}/lib:${PWD}/build:${LD_LIBRARY_PATH}" ./example
